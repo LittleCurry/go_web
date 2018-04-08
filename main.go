@@ -14,6 +14,7 @@ func main() {
 }
 
 func login(w http.ResponseWriter, r *http.Request){
+	///////////
 	r.ParseForm()
 	fmt.Println(r.Method)
 	if r.Method=="GET"{
