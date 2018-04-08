@@ -7,7 +7,7 @@ import(
 )
 
 func main() {
-	http.HandleFunc("/login",login)
+	http.HandleFunc("/",login)
 	if err := http.ListenAndServe(":80", nil); err !=nil {
 		fmt.Println("ListenAndServe err", err)
 	}
